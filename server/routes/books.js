@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
       return console.error(err);
     }
     else {
-      res.render('books/index', {
+      res.render('server/views/books/index.ejs', {
         title: 'Books',
         books: books
       });
@@ -25,7 +25,7 @@ router.get('/', (req, res, next) => {
 
 //  GET the Book Details page in order to add a new Book
 router.get('/add', (req, res, next) => {
-  res.render('books/details.ejs', {
+  res.render('server/views/books/details.ejs', {
 //book details
     title: 'Add Book',
 
