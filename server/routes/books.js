@@ -58,7 +58,7 @@ router.post('/add', (req, res, next) => {
 
     } else {
 
-      res.redirect('server/views/books');
+      res.redirect('server/views/books/details.ejs');
 
     }
 
